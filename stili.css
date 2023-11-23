@@ -1,0 +1,990 @@
+/* ---------STILI GENERALI--------- */
+
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #333;
+}
+
+h1 {
+  font-family: "Pepsi";
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/* ---------------FONT-------------- */
+
+@font-face {
+  font-family: Pepsi;
+  src: url(Fonts_progetto_sito_2/PEPSI_pl.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(Fonts_progetto_sito_2/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(Fonts_progetto_sito_2/Roboto-Medium.ttf);
+}
+
+/*-------------MENU NAVIGAZIONE-------------*/
+
+.header {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 10vh;
+  background-color: white;
+  z-index: 2;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+  margin-left: 6%;
+}
+
+.logo {
+  height: 8vh;
+}
+
+.logo_link {
+  text-decoration: none;
+}
+
+.menu {
+  line-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu div {
+  font-family: Pepsi;
+  list-style: none;
+  padding: 0;
+  margin-right: 5vw;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu div a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu div a:hover {
+  color: #c9002b;
+  text-decoration: none;
+}
+.site_title {
+  display: flex;
+  align-items: center;
+}
+.Pepsi_red {
+  display: inline;
+  color: #c9002b;
+  line-height: 10vh;
+  margin-left: 1vw;
+}
+
+.Jet_blue {
+  display: inline;
+  color: #004b93;
+}
+
+
+/*-------------------------------- MENU TENDINA--------------------- */ 
+.sub_menu_box{
+  list-style:none;
+  background-color: white;
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0 10px;
+}
+
+
+
+.has_children:hover .sub_menu_box{
+  transition: .5s;
+  display: block;
+
+}
+
+
+
+/* ------------------HOMEPAGE--HERO-SECTION---------------*/
+.home_hero_section {
+  display: block;
+}
+.immagine_landing {
+  width: 100%;
+  padding-top: 10vh;
+  display: block;
+}
+
+button {
+  height: 60px;
+  padding: 0 1vh;
+  color: white;
+  background-color: #c9002b;
+  font-family: Roboto;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+
+.div_button{
+  height: 60px;
+  padding: 0 1vh;
+  color: white;
+  background-color: #c9002b;
+  font-family: Roboto;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.div_button:hover{
+  transform: scale(1.2);
+}
+
+.div_button:active{
+  background-color: #a20023;
+}
+
+button:active {
+  background-color: #a20023;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+}
+
+.image_container {
+  position: relative;
+}
+
+.arrow_icon {
+  margin: 1em 0em 1em 0.5em;
+  height: 30px;
+}
+
+.button_text {
+  color: inherit;
+  line-height: 60px;
+  font-family: Roboto;
+  font-size: 20px;
+  margin: 0;
+}
+
+.button a{
+  text-decoration: none;
+}
+
+
+
+
+
+/* ------------HOMEPAGE---TRAMA-SECTION---------------------*/
+
+.section_trama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(0, 75, 147);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 75, 147, 1) 0%,
+    rgba(201, 0, 43, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 75, 147, 1) 0%,
+    rgba(201, 0, 43, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 75, 147, 1) 0%,
+    rgba(201, 0, 43, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1);
+}
+
+.trama_text {
+  width: 88%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 350px;
+  margin-top: 300px;
+}
+
+.trama_text h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+.trama_text p {
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: Roboto-Medium;
+  font-size: large;
+  line-height: 30px;
+  color: white;
+}
+
+.section_trama video {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  border-radius: 25px;
+}
+
+/* ----------------------HOMEPAGE-CAST----------------------------------*/
+.cast_container {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
+}
+.cast_card_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cast_title {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+.cast_immagini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 70px;
+}
+.cast_card {
+  display: flex;
+  width: 225px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cast_card h2 {
+  color: white;
+  font-family: Roboto-Medium;
+}
+
+.cast_card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cast_nomi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  padding: 0 70px;
+}
+
+.cast_nomi h2 {
+  font-family: Roboto;
+  color: white;
+  font-weight: lighter;
+}
+.p_cast {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 70px;
+  font-family: Roboto-Medium;
+  color: white;
+  font-size: large;
+  line-height: 30px;
+}
+
+.button_cast {
+  background-color: #004b93;
+}
+
+.button_cast:active {
+  background-color: #013c74;
+}
+
+/*-------------------------HOMEPAGE-GALLERY--------------------------*/
+
+.section_home_gallery {
+  background-image: url(Immagini_progetto_sito/tile_mondrian.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.over_sfondo {
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  margin-bottom: 70px;
+  margin-top: 150px;
+}
+
+.button_gallery {
+  align-items: center;
+}
+
+.section_home_gallery div {
+  margin-bottom: 150px;
+}
+
+
+  /*----------------GALLERY-FIRSTSECTION------------------------*/
+
+  .start_foto_gallery{
+    position: relative;
+    display: block;
+  }
+  
+  .start_foto_gallery img{
+    display: block;
+    width: 100%;
+  }
+  
+  
+  .start_foto_gallery h1{
+    position: absolute;
+    top: 85%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+
+/*---------------------------GALLERY-GALLERYPAGE----------------------------*/
+
+.gallery_gallery {
+  background-image: url(Immagini_progetto_sito/tile_mondrian.png);
+  display:flex;
+  justify-content: space-around;
+  padding: 200px 0;
+}
+
+.gallery_primo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cindy{
+width: 50%;
+}
+
+.cindy img{
+  width: 100%;
+}
+
+.gallery_colonna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+}
+
+
+.gallery_colonna img{
+  width: 100%;
+}
+
+.gallery_secondo{
+  background-image: url(Immagini_progetto_sito/tile_mondrian.png);
+  width: 100%;
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_secondo img{
+  width: 90%;
+}
+
+
+.gallery_terzo{
+  background-image: url(Immagini_progetto_sito/tile_mondrian.png);
+  width: 100%;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;;
+
+}
+
+.posta{
+ max-width: 50%;
+ max-height: 50%;
+}
+
+.everest{
+ max-width: 50%;
+ max-height: 50%;
+ object-fit: cover;
+}
+
+
+.gallery_quattro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:url(Immagini_progetto_sito/tile_mondrian.png);
+  padding-bottom: 200px;
+  width: 100%;
+}
+
+.protest1{
+  max-width: 50%;
+}
+
+.protest2{
+  max-width: 50%;
+}
+
+
+.gallery_quinta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:url(Immagini_progetto_sito/tile_mondrian.png);
+  padding-bottom: 200px;
+  width: 100%;
+}
+
+.young_avenatti{
+  max-width: 50%;
+}
+
+.abbraccio{
+  max-width: 50%;
+}
+
+.gallery_sesta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:url(Immagini_progetto_sito/tile_mondrian.png);
+  padding-bottom: 200px;
+  width: 100%;
+}
+
+.tvjet{
+  width: 90%;
+}
+
+/* --------------------------LASERIE-PAGE-------------------------------- */
+
+.start_foto{
+  position: relative;
+  display: block;
+}
+
+.start_foto img{
+  display: block;
+  width: 100%;
+}
+
+
+.start_foto h1{
+  position: absolute;
+  top: 85%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+
+/* --------------------------LASERIE-CAST-PAGE-------------------------------- */
+
+.Laserie_trama{
+  background: rgb(0,75,147);
+  background: -moz-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1); 
+}
+
+.Laserie_trama h1{
+  font-family: Pepsi;
+  color: white;
+  font-size: 50px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.testo_lattina{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.testo_lattina p{
+  font-family: Roboto-Medium;
+  color: white;
+  width: 50%;
+  line-height: 2;
+  font-size: large;
+  margin-bottom: 500px;
+  text-align: justify;
+}
+
+.testo_lattina img{
+  margin-bottom: 500px;
+}
+
+/* --------------------------LASERIE-CASTPAGE-------------------------------- */
+
+.Laserie_cast {
+ background-image: url(Immagini_progetto_sito/tile_mondrian.png);
+ padding: 200px 0;
+}
+
+.intestazione{
+  color: white;
+  background-color: #a20023;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:Pepsi;
+  border-radius: 200px;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 200px;
+  width: 400px;
+  height: 100px;
+  font-size: 50px;
+}
+
+
+.actor_card_leonard {
+  background-color: #7EA3C8;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 200px;
+  box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.actor_card_leonard h2 {
+  text-align: left;
+  color: white;
+  font-size: larger;
+  font-family: Roboto-Medium;
+  margin-left: 50px;
+  border-bottom: white solid 3px;
+  width: 30%;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.actor_card_leonard p {
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  width: 85%;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+
+.actor_card_todd {
+  background-color: #a20023;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 200px;
+  box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.actor_card_todd h2 {
+  text-align: left;
+  color: white;
+  font-size: larger;
+  font-family: Roboto-Medium;
+  margin-left: 50px;
+  border-bottom: white solid 3px;
+  width: 30%;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.actor_card_todd p {
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  width: 85%;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+
+.actor_card_cindy {
+  background-color: #7EA3C8;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 200px;
+  box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.actor_card_cindy h2 {
+  text-align: left;
+  color: white;
+  font-size: larger;
+  font-family: Roboto-Medium;
+  margin-left: 50px;
+  border-bottom: white solid 3px;
+  width: 30%;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.actor_card_cindy p {
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  width: 85%;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.actor_card_avenatti {
+  background-color: #a20023;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+
+
+.actor_card_avenatti h2 {
+  text-align: left;
+  color: white;
+  font-size: larger;
+  font-family: Roboto-Medium;
+  margin-left: 50px;
+  border-bottom: white solid 3px;
+  width: 30%;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.actor_card_avenatti p {
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  width: 85%;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px; 
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+
+/* --------------------------LASERIE-CURIOSITY-PAGE-------------------------------- */
+
+.Laserie_curiosity {
+  background: rgb(0,75,147);
+  background: -moz-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  background: linear-gradient(180deg, rgba(0,75,147,1) 0%, rgba(201,0,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004b93",endColorstr="#c9002b",GradientType=1); 
+}
+
+.Laserie_curiosity h1{
+  font-family: Pepsi;
+  color: white;
+  font-size: 50px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.curiosity_box_titles{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curiosity_titles{
+  color: white;
+  font-family: Roboto;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: white solid 3px;
+  width: 90%;
+}
+
+.queenpins {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+
+
+.queenpins img{
+  margin-left: 60px;
+  width: 200%;
+}
+
+.queenpins p{
+  color: white;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  font-size: large;
+  margin-left: 30px;
+  margin-right: 60px;
+  text-align: justify;
+}
+
+.leonardvspepsico{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+
+.leonardvspepsico p{
+  color: white;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  font-size: large;
+  margin-left: 60px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.leonardvspepsico img{
+  margin-right: 60px;
+  width: 60%;
+}
+
+.avenatti_guai_text{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.avenatti_guai_title_text{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.avenatti_guai_text p{
+  color: white;
+  font-family: Roboto-Medium;
+  line-height: 2;
+  font-size: large;
+  margin-left: 30px;
+  margin-right: 60px;
+  text-align: justify;
+}
+
+
+.avenatti_guai_text img{
+  margin-left: 60px;
+  width: 150%;
+}
+
+/* --------------------------FOOTER-------------------------------- */
+
+footer {
+  display: flex;
+  height: 350px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_caption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  width: 30%;
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo_footer img {
+  height: 50px;
+}
+
+.footer_caption p {
+  font-family: Roboto-Medium;
+  font-weight: lighter;
+  color: black;
+}
+
+.footer_menu a {
+  text-decoration: none;
+  font-family: Roboto-Medium;
+  color: black;
+}
+
+.footer_menu a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_articoli a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto-Medium;
+}
+
+.footer.articoli a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_menu h3 {
+  font-family: Roboto-Medium;
+  color: #c9002b;
+  font-weight: bold;
+}
+
+.footer_articoli h3 {
+  font-family: Roboto-Medium;
+  font-weight: bold;
+  color: #004b93;
+}
+
+.footer_links_container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5vw;
+  width: 30vw;
+}
+
+.footer_menu,
+.footer_articoli {
+  border-left: 2px solid black;
+  padding-left: 10px;
+}
+
+.footer_menu div {
+  margin-bottom: 10px;
+}
+
+.footer_articoli div {
+  margin-bottom: 10px;
+}
+
+
